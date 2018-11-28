@@ -1,3 +1,4 @@
+package others;
 
 
 public abstract class Fruit  {

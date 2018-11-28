@@ -12,7 +12,7 @@ public class TestMyGenerics {
 		a=a.get();  
 		C c=new C();  
 		c=c.setAndGet(new C());  
-		List ds = new ArrayList();
+//		List ds = new ArrayList();
 		
 	}  
 }

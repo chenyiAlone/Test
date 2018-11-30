@@ -1,4 +1,4 @@
-package test.lang;
+锘縫ackage test.lang;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -23,7 +23,7 @@ public class TestRunTime {
         Runtime.getRuntime().addShutdownHook(new Thread() {
             @Override
             public void run() {
-                System.out.println("加入关闭钩子");
+                System.out.println("鍔犲叆鍏抽棴閽╁瓙");
             }
         });
         System.out.println(Runtime.getRuntime().totalMemory());

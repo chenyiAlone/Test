@@ -1,7 +1,7 @@
-package test._class;
+ï»¿package test._class;
 /**
  * 
- * ²âÊÔClass: T cast(Object o)ÀàĞÍ×ª»¯
+ * æµ‹è¯•Class: T cast(Object o)ç±»å‹è½¬åŒ–
  * @author chenyiAlone
  *
  */
@@ -10,7 +10,7 @@ public class TestCast {
         Base b = new Implem();
         System.out.println(b.getClass().getName());
         System.out.println(Implem.class.cast(b).getClass());
-        // ÆäÊµ¾ÍÊÇÏàµ±ÓÚ(A)BÕâÖÖÇ¿ÖÆÀàĞÍ×ª»¯
+        // å…¶å®å°±æ˜¯ç›¸å½“äº(A)Bè¿™ç§å¼ºåˆ¶ç±»å‹è½¬åŒ–
         test(Implem.class.cast(b));
     }
     static void test(Implem i) {

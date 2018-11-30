@@ -1,4 +1,4 @@
-package test.concurrency;
+ï»¿package test.concurrency;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -20,7 +20,7 @@ public class TestExecutors {
             }
             @Override
             public String toString() {
-               return "ĞÂÏß³Ì1";
+               return "æ–°çº¿ç¨‹1";
             }
             
         });
@@ -37,15 +37,15 @@ public class TestExecutors {
 //            }
 //            @Override
 //            public String toString() {
-//               return "ĞÂÏß³Ì2";
+//               return "æ–°çº¿ç¨‹2";
 //            }
 //            
 //        });
         try {
             exec.shutdown();
-            System.out.println("¿ªÊ¼await()");
+            System.out.println("å¼€å§‹await()");
             boolean b = exec.awaitTermination(7, TimeUnit.SECONDS);
-            System.out.println("½áÊøawait()");
+            System.out.println("ç»“æŸawait()");
 //            System.out.println(exec.shutdownNow());
             System.out.println("awaitTerination():\t" + b);
             

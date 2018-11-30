@@ -1,4 +1,4 @@
-package test.lang;
+﻿package test.lang;
 
 public class TestHash {
 	public static void main(String[] args) {

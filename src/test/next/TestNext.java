@@ -1,4 +1,4 @@
-package test.next;
+﻿package test.next;
 
 public class TestNext {
 	 public static void main(String[] args){

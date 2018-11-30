@@ -1,4 +1,4 @@
-package test.access_permissions._protected.package2;
+﻿package test.access_permissions._protected.package2;
 
 public class Aprotected {
 	protected void play() {

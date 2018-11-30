@@ -1,4 +1,4 @@
-package test.lang;
+ï»¿package test.lang;
 
 public class TestGc {
 	
@@ -19,7 +19,7 @@ class GC{
 	
 	@Override
 	protected void finalize() throws Throwable {
-		System.out.println("ÒÑ¾­±»»ØÊÕ");
+		System.out.println("å·²ç»è¢«å›æ”¶");
 	}
 	public void play() {
 		System.out.println("running---");

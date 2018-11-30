@@ -1,4 +1,4 @@
-package test._utils;
+锘縫ackage test._collections;
 
 import java.util.LinkedHashMap;
 
@@ -10,11 +10,11 @@ public class TestLinkedHashMap {
 		map.put("a",2);
 		map.put("student",3);
 
-		System.out.println("取值前-->"+map);
+		System.out.println("鍙栧�煎墠-->"+map);
 		System.out.println(map.get("a"));
-		System.out.println("第一次取值后-->"+map);
+		System.out.println("绗竴娆″彇鍊煎悗-->"+map);
 		System.out.println(map.get("student"));
-		System.out.println("第二次取值后-->"+map);
+		System.out.println("绗簩娆″彇鍊煎悗-->"+map);
 	}
 
 }

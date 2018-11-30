@@ -1,4 +1,4 @@
-package testsomething;
+﻿package testsomething;
 
 public class Kmp {
 	public static void main(String[] args) {

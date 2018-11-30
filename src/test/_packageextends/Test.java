@@ -1,4 +1,4 @@
-package test._packageextends;
+﻿package test._packageextends;
 
 public class Test extends WithInner.Inner{
 	Test(){

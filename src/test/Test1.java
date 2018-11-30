@@ -1,4 +1,4 @@
-package test;
+锘縫ackage test;
 
 import test.iterfacr2.Dog;
 
@@ -11,27 +11,27 @@ public class Test1 {
 class A{
 	private Dog dog = new Dog("A");
 	static {
-		System.out.println("初始化A的静态属性！");
+		System.out.println("鍒濆鍖朅鐨勯潤鎬佸睘鎬э紒");
 	}
 	A(){
-		System.out.println("调用A的构造器!");
+		System.out.println("璋冪敤A鐨勬瀯閫犲櫒!");
 	}
 }
 class B extends A{
 	private Dog dog = new Dog("B");
 	static {
-		System.out.println("初始化B的静态属性！");
+		System.out.println("鍒濆鍖朆鐨勯潤鎬佸睘鎬э紒");
 	}
 	B(){
-		System.out.println("调用B的构造器!");
+		System.out.println("璋冪敤B鐨勬瀯閫犲櫒!");
 	}
 }
 class C extends B{
 	private Dog dog = new Dog("C");
 	static {
-		System.out.println("初始化C的静态属性！");
+		System.out.println("鍒濆鍖朇鐨勯潤鎬佸睘鎬э紒");
 	}
 	C(){
-		System.out.println("调用C的构造器!");
+		System.out.println("璋冪敤C鐨勬瀯閫犲櫒!");
 	}
 }

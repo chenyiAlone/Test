@@ -1,13 +1,13 @@
-package test.deadLock;
+ï»¿package test.deadLock;
 
 
 public class Test {  
   
     public static void main(String[] args) {  
        MySync m = new MySync();
-       Thread t1 = new Thread(m,"Ïß³ÌÒ»");
-       Thread t2 = new Thread(m,"Ïß³Ì¶ş");
-       Thread t3 = new Thread(m,"Ïß³ÌÈı");
+       Thread t1 = new Thread(m,"çº¿ç¨‹ä¸€");
+       Thread t2 = new Thread(m,"çº¿ç¨‹äºŒ");
+       Thread t3 = new Thread(m,"çº¿ç¨‹ä¸‰");
        t1.start();
        t2.start();
        t3.start();
@@ -27,43 +27,43 @@ class MySync implements Runnable{
 	public synchronized void test3() {
 	
 		 System.out.print(Thread.currentThread().getName()+"-->");
-		 System.out.println("test¿ªÊ¼..");  
+		 System.out.println("testå¼€å§‹..");  
 		 try {  
 			  Thread.sleep(1000);  
 		 } catch (InterruptedException e) {  
 			  e.printStackTrace();  
 		 }  
 		 System.out.print(Thread.currentThread().getName()+"-->");
-		 System.out.println("test½áÊø..");  
+		 System.out.println("testç»“æŸ..");  
 	}  
 	
-	//Ëø.class
+	//é”.class
 	public  void test2() {
 		  synchronized(MySync.class) {
 			  System.out.print(Thread.currentThread().getName()+"-->");
-			  System.out.println("test¿ªÊ¼..");  
+			  System.out.println("testå¼€å§‹..");  
 			  try {  
 				  Thread.sleep(1000);  
 			  } catch (InterruptedException e) {  
 				  e.printStackTrace();  
 			  }  
 			  System.out.print(Thread.currentThread().getName()+"-->");
-			  System.out.println("test½áÊø..");  
+			  System.out.println("testç»“æŸ..");  
 		  }
 	 }  
 	
-	//Ëøthis
+	//é”this
 	public  void test1() {
 		synchronized(this) {
 			System.out.print(Thread.currentThread().getName()+"-->");
-	        System.out.println("test¿ªÊ¼..");  
+	        System.out.println("testå¼€å§‹..");  
 	        try {  
 	           Thread.sleep(1000);  
 	        } catch (InterruptedException e) {  
 	            e.printStackTrace();  
 	        }  
 	        System.out.print(Thread.currentThread().getName()+"-->");
-	        System.out.println("test½áÊø..");  
+	        System.out.println("testç»“æŸ..");  
 		}
 	}  
 }  

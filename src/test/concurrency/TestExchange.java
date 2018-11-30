@@ -1,4 +1,4 @@
-package test.concurrency;
+ï»¿package test.concurrency;
 import java.util.concurrent.Exchanger;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -12,14 +12,14 @@ public class TestExchange {
             @Override
             public void run() {
                 try {
-                    String data1 = "ÁãÊ³";
+                    String data1 = "é›¶é£Ÿ";
                     int money = 100;
-                    System.out.println("Ïß³Ì" + Thread.currentThread().getName()
-                            + "ÕıÔÚ°ÑÊı¾İ " + data1 + " »»³öÈ¥");
+                    System.out.println("çº¿ç¨‹" + Thread.currentThread().getName()
+                            + "æ­£åœ¨æŠŠæ•°æ® " + data1 + " æ¢å‡ºå»");
                     Thread.sleep((long) Math.random() * 10000);
                     String data2 = (String) exchanger.exchange(money);
-                    System.out.println("Ïß³Ì " + Thread.currentThread().getName()
-                            + "»»»ØµÄÊı¾İÎª " + data2);
+                    System.out.println("çº¿ç¨‹ " + Thread.currentThread().getName()
+                            + "æ¢å›çš„æ•°æ®ä¸º " + data2);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
@@ -32,13 +32,13 @@ public class TestExchange {
             @Override
             public void run() {
                 try {
-                    String data1 = "Ç®";
-                    System.out.println("Ïß³Ì" + Thread.currentThread().getName()
-                            + "ÕıÔÚ°ÑÊı¾İ " + data1 + " ½»»»³öÈ¥");
+                    String data1 = "é’±";
+                    System.out.println("çº¿ç¨‹" + Thread.currentThread().getName()
+                            + "æ­£åœ¨æŠŠæ•°æ® " + data1 + " äº¤æ¢å‡ºå»");
                     Thread.sleep((long) (Math.random() * 10000));
                     int data2 = (int) exchanger.exchange(data1);
-                    System.out.println("Ïß³Ì " + Thread.currentThread().getName()
-                            + "½»»»»ØÀ´µÄÊı¾İÊÇ: " + data2);
+                    System.out.println("çº¿ç¨‹ " + Thread.currentThread().getName()
+                            + "äº¤æ¢å›æ¥çš„æ•°æ®æ˜¯: " + data2);
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

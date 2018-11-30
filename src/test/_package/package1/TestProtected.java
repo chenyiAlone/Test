@@ -1,4 +1,4 @@
-package test._package.package1;
+Ôªøpackage test._package.package1;
 
 import test._package.package2.Chip;
 import test._package.package2.ChocolateChip;
@@ -18,7 +18,7 @@ public class TestProtected  extends Extendsed{
 }
 class Extendsed {
 	public void print() {
-		System.out.println("Extendsed.print();£°");
+		System.out.println("Extendsed.print();ÔºÅ");
 	}
 	public Extendsed(){
 		 System.out.println("**********");

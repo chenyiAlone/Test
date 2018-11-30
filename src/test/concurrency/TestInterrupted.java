@@ -1,4 +1,4 @@
-package test.concurrency;
+ï»¿package test.concurrency;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -41,8 +41,8 @@ public class TestInterrupted {
 				while(true) {
 					
 					Thread.sleep(1000);
-					System.out.println("¿ªÊ¼");
-					System.out.println("½áÊø");
+					System.out.println("å¼€å§‹");
+					System.out.println("ç»“æŸ");
 				}
 			}
 		};

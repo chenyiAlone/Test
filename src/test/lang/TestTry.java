@@ -1,4 +1,4 @@
-package test.lang;
+ï»¿package test.lang;
 
 public class TestTry {
     public static void main(String[] args) {
@@ -28,7 +28,7 @@ public class TestTry {
                         e.printStackTrace();
 //                        throw e;
                     }
-                    System.out.println("5000µÈ´ı½áÊø£¡");
+                    System.out.println("5000ç­‰å¾…ç»“æŸï¼");
                 };
             }.start();;
         }catch(Exception e){

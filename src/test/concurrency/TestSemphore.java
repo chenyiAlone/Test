@@ -1,4 +1,4 @@
-package test.concurrency;
+﻿package test.concurrency;
 
 import java.util.concurrent.Semaphore;
 
@@ -9,7 +9,7 @@ public class TestSemphore {
     public void testFair(){
         try {
             semaphore.acquire();
-            System.out.println( "正在执行的线程Thread-Name:" + Thread.currentThread().getName());
+            System.out.println( "姝ｅ湪镓ц镄勭嚎绋婽hread-Name:" + Thread.currentThread().getName());
         }catch (InterruptedException e) {
             e.printStackTrace();
         }finally{
@@ -25,7 +25,7 @@ class ThreadA extends Thread{
     }
     @Override
     public void run() {
-        System.out.println( "Thread-Name:" + this.getName() + "启动了！");
+        System.out.println( "Thread-Name:" + this.getName() + "鍚姩浜嗭紒");
         service.testFair();
     }
 }

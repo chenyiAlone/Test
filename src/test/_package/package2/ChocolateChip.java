@@ -1,4 +1,4 @@
-package test._package.package2;
+锘縫ackage test._package.package2;
 
 import test._package2.Dad;
 
@@ -8,6 +8,6 @@ public class ChocolateChip extends Chip{
 		chocolateChip.bake();
 //		chocolateChip.f1();
 //		chocolateChip.f2();
-	//!	chocolateChip.f3();		不加访问权限修饰词的成员不能都被继承使用
+	//!	chocolateChip.f3();		涓嶅姞璁块棶鏉冮檺淇グ璇嶇殑鎴愬憳涓嶈兘閮借缁ф壙浣跨敤
 	}
 }

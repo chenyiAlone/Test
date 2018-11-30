@@ -1,4 +1,4 @@
-package test.remove;
+ï»¿package test.remove;
 
 import java.util.Iterator;
 
@@ -15,7 +15,7 @@ public class TestList implements java.lang.Iterable{
 			}
 			
 			
-			public void remove() {		//É¾³ıµ±Ç°ÓÎ±êËùÔÚµÄÎ»ÖÃµÄÔªËØ
+			public void remove() {		//åˆ é™¤å½“å‰æ¸¸æ ‡æ‰€åœ¨çš„ä½ç½®çš„å…ƒç´ 
 				
 				System.arraycopy(element, corsor+1, element, corsor,size -corsor-1);
 				size--;            //SimpleList.this.size--;

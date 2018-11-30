@@ -1,8 +1,8 @@
-package test.iterfacr2;
+ï»¿package test.iterfacr2;
 
 public class Cat extends Animal{
 	public void run() {
-		System.out.println("Cat !ÅÜÅÜÅÜÅÜ");
+		System.out.println("Cat !è·‘è·‘è·‘è·‘");
 		
 	}
 

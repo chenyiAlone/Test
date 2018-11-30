@@ -1,4 +1,4 @@
-package test._exception;
+ï»¿package test._exception;
 
 import java.util.NoSuchElementException;
 class DataException extends Exception{}
@@ -23,7 +23,7 @@ public class TestException {
 					throw new NullPointerException();
 				} catch (Exception e) {
 					e.printStackTrace();
-					//²»ÏëÉÏÅ×³öÍâ²ãtry½«²»ÄÜ²¶»ñµ½Òì³£
+					//ä¸æƒ³ä¸ŠæŠ›å‡ºå¤–å±‚tryå°†ä¸èƒ½æ•è·åˆ°å¼‚å¸¸
 					throw e;
 				}
 			} catch (Exception e) {
@@ -38,9 +38,9 @@ public class TestException {
 			throw new NoSuchElementException();
 		}catch(NoSuchElementException e) {
 			e.printStackTrace(System.out);
-			System.out.println("-----------·Ö¸îÏß----------");
+			System.out.println("-----------åˆ†å‰²çº¿----------");
 			e.printStackTrace();
-			throw new RuntimeException(e);	//½«Òì³£°ü×°³ÉÔËĞĞÊ±Òì³£²¢Å×³ö£¬²»ĞèÒªSystem.err½ÓÊÕ¾Í¿ÉÒÔ´òÓ¡³öÀ´
+			throw new RuntimeException(e);	//å°†å¼‚å¸¸åŒ…è£…æˆè¿è¡Œæ—¶å¼‚å¸¸å¹¶æŠ›å‡ºï¼Œä¸éœ€è¦System.erræ¥æ”¶å°±å¯ä»¥æ‰“å°å‡ºæ¥
 		}
 		
 	}

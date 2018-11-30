@@ -1,4 +1,4 @@
-package test._exception;
+﻿package test._exception;
 
 public class TestThrow {
 	public static void main (String[] args) throws Exception {

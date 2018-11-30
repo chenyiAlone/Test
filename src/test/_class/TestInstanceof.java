@@ -1,4 +1,4 @@
-package test._class;
+﻿package test._class;
 
 import java.lang.reflect.Proxy;
 

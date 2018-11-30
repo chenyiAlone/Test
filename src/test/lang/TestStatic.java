@@ -1,4 +1,4 @@
-package test.lang;
+ï»¿package test.lang;
 
 public class TestStatic {
 	public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class TestStatic {
 class Sstatic{
 	public static int count=0;
 	static {
-		System.out.println("·ÃÎÊÁË¾²Ì¬Óò"+"-->"+count);
+		System.out.println("è®¿é—®äº†é™æ€åŸŸ"+"-->"+count);
 	}
 	
 }

@@ -1,4 +1,4 @@
-package test.concurrency;
+ï»¿package test.concurrency;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
@@ -14,8 +14,8 @@ public class TestRunnableFuture {
             }
         }) ;
         try {
-            /* ±ØĞëµ÷ÓÃFutureTask¶ÔÏóµÄrun()·½·¨Íê³ÉÔËĞĞ,
-             * ²ÅÄÜ´ÓFutureTask¶ÔÏóÖĞÍ¨¹ıget()»ñÈ¡µ½Callable¶ÔÏó·µ»ØµÄ½á¹û
+            /* å¿…é¡»è°ƒç”¨FutureTaskå¯¹è±¡çš„run()æ–¹æ³•å®Œæˆè¿è¡Œ,
+             * æ‰èƒ½ä»FutureTaskå¯¹è±¡ä¸­é€šè¿‡get()è·å–åˆ°Callableå¯¹è±¡è¿”å›çš„ç»“æœ
              */
             f.run();
             System.out.println(f.get());

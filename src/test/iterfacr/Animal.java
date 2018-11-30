@@ -1,4 +1,4 @@
-package test.iterfacr;
+﻿package test.iterfacr;
 
 public interface Animal {
 	void run();

@@ -1,10 +1,10 @@
-package test.deadLock;
+ï»¿package test.deadLock;
 
 
 /**
  * 
- * ²âÊÔËÀËø
- * @author Ø¼³¾Òİc
+ * æµ‹è¯•æ­»é”
+ * @author ä¸¶å°˜é€¸c
  *
  */
 public class DeadLockSample implements Runnable {  

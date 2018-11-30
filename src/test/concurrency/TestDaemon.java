@@ -1,4 +1,4 @@
-package test.concurrency;
+ï»¿package test.concurrency;
 
 public class TestDaemon {
     public static void main(String[] args) {
@@ -7,11 +7,11 @@ public class TestDaemon {
             public void run() {
                 try {
                     Thread.sleep(5000);
-                    System.out.println("Daemon Thread½áÊø");
+                    System.out.println("Daemon Threadç»“æŸ");
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }finally {
-                    System.out.println("Daemon Thread ÖĞµÄ finally Óï¾äÖ´ĞĞ£¡");
+                    System.out.println("Daemon Thread ä¸­çš„ finally è¯­å¥æ‰§è¡Œï¼");
                 }
             }
         };
@@ -19,7 +19,7 @@ public class TestDaemon {
         t.start();
         try {
             Thread.sleep(2000);
-            System.out.println("main Thread½áÊø");
+            System.out.println("main Threadç»“æŸ");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

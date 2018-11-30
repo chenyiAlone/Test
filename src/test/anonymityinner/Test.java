@@ -1,12 +1,12 @@
-package test.anonymityinner;
+ï»¿package test.anonymityinner;
 /**
- * ²âÊÔ¾Ö²¿ÄÚ²¿Àà¶ÔÍâ²¿¶ÔÏóµÄÊôĞÔµÄ·ÃÎÊ
- * @author Ø¼³¾Òİc
+ * æµ‹è¯•å±€éƒ¨å†…éƒ¨ç±»å¯¹å¤–éƒ¨å¯¹è±¡çš„å±æ€§çš„è®¿é—®
+ * @author ä¸¶å°˜é€¸c
  *
  */
 public class Test {
 	/**
-	 * ²âÊÔ¹²ÓÃÍ¬Ò»¸öÊµÀı»¯¶ÔÏóÒıÓÃÊ±£¬Á½¸ö¾Ö²¿ÄÚ²¿Àà¶Ô¸ÃÀàµÄÊôĞÔµÄ·ÃÎÊ
+	 * æµ‹è¯•å…±ç”¨åŒä¸€ä¸ªå®ä¾‹åŒ–å¯¹è±¡å¼•ç”¨æ—¶ï¼Œä¸¤ä¸ªå±€éƒ¨å†…éƒ¨ç±»å¯¹è¯¥ç±»çš„å±æ€§çš„è®¿é—®
 	 */
 	public static void test01() {
 		Outer outer = new Outer();
@@ -18,7 +18,7 @@ public class Test {
 		}
 	}
 	/**
-	 * ²âÊÔ·Ç¹²ÓÃÍ¬Ò»¸öÊµÀı»¯¶ÔÏóÒıÓÃÊ±£¬Á½¸ö¾Ö²¿ÄÚ²¿Àà¶Ô¸ÃÀàµÄÊôĞÔµÄ·ÃÎÊ
+	 * æµ‹è¯•éå…±ç”¨åŒä¸€ä¸ªå®ä¾‹åŒ–å¯¹è±¡å¼•ç”¨æ—¶ï¼Œä¸¤ä¸ªå±€éƒ¨å†…éƒ¨ç±»å¯¹è¯¥ç±»çš„å±æ€§çš„è®¿é—®
 	 */
 	public static void test02() {
 		Outer outer1 = new Outer();
@@ -31,16 +31,16 @@ public class Test {
 		}
 	}
 	public static void main(String[] args) {
-		//¹²ÓÃ
+		//å…±ç”¨
 //		test01();
-		//·Ç¹²ÓÃ
+		//éå…±ç”¨
 //		test02();
 	}
 
 }
 class Outer{
 	private int count = 0 ;
-	//Á½¸öÀà¶¼ÊÇ·µ»ØCounter½Ó¿ÚµÄÊµÀı»¯¶ÔÏó
+	//ä¸¤ä¸ªç±»éƒ½æ˜¯è¿”å›Counteræ¥å£çš„å®ä¾‹åŒ–å¯¹è±¡
 	Counter getCounter1(final String name) {
 		class LocalCounter implements Counter{
 

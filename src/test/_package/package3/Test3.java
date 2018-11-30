@@ -1,11 +1,11 @@
-package test._package.package3;
+﻿package test._package.package3;
 
 import test._package.package1.TestInterface;
 import test._package.package2.Test2;
 
 public class Test3 extends Test2{
 	public static class staticInter{
-		private int i = 20;	//��̬���в��������ⲿ�Ǿ�̬�����Ժͷ���
+		private int i = 20;	//静态类中不能引用外部非静态的属性和方法
 	}
 	public  Object toInter(){
 		return this.new Inter();

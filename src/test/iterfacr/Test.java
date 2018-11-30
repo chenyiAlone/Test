@@ -1,4 +1,4 @@
-package test.iterfacr;
+﻿package test.iterfacr;
 
 public class Test {
 	public static void main(String[] args) {

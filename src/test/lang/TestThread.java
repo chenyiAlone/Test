@@ -1,4 +1,4 @@
-package test.lang;
+锘縫ackage test.lang;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -38,7 +38,7 @@ public class TestThread {
 class MyThread extends Thread{
 	@Override
 	public void run() {
-		System.out.println("当前线程 "+Thread.currentThread());
+		System.out.println("褰撳墠绾跨▼ "+Thread.currentThread());
 		System.out.println("Mythread "+this);
 //		Thread.currentThread().setUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
 //			

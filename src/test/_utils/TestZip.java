@@ -1,4 +1,4 @@
-package test._utils;
+ï»¿package test._utils;
 
 import java.io.BufferedOutputStream;
 import java.io.BufferedReader;
@@ -26,7 +26,7 @@ public class TestZip {
 		ZipOutputStream zos = new ZipOutputStream(csum);
 		BufferedOutputStream out =
 		new BufferedOutputStream(zos);
-		    //setComment-->ÉèÖÃzipÎÄ¼þµÄ×¢ÊÍ
+		    //setComment-->è®¾ç½®zipæ–‡ä»¶çš„æ³¨é‡Š
 		zos.setComment("A test of Java Zipping");
 		// No corresponding getComment(), though.
 		for(String arg : args) {

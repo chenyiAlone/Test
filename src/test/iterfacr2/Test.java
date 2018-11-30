@@ -1,10 +1,10 @@
-package test.iterfacr2;
+锘縫ackage test.iterfacr2;
 
 public class Test {
 	public static void main(String[] args) {
 	Animal a= new Dog();
 	a.run();
-					//	是Dog就是Dog，强制类型转换不会改变其本质
+					//	鏄疍og灏辨槸Dog锛屽己鍒剁被鍨嬭浆鎹笉浼氭敼鍙樺叾鏈川
 	}
 
 }

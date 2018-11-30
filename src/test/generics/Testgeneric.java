@@ -1,4 +1,4 @@
-package test.generics;
+ï»¿package test.generics;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,11 +32,11 @@ public class Testgeneric {
 //		List<Fruit> list; 
 //!		list = new ArrayList<Apple>();
 //!		list.add(new Apple());
-//!		list.add(new Fruit());     List²»Ö§³ÖÀàËÆÓÚÊı×éµÄĞ­±äÀàĞÍ
+//!		list.add(new Fruit());     Listä¸æ”¯æŒç±»ä¼¼äºæ•°ç»„çš„åå˜ç±»å‹
 	    
 	}
 	/**
-	 * ²âÊÔÔËĞĞ·ºĞÍÊÇ·ñ´æÔÚ
+	 * æµ‹è¯•è¿è¡Œæ³›å‹æ˜¯å¦å­˜åœ¨
 	 */
 	public static void test2() {
 		Object[] os = new Object[2];

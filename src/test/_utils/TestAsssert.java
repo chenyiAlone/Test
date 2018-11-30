@@ -1,10 +1,10 @@
-package test._utils;
+ï»¿package test._utils;
 
 
 public class TestAsssert {
     public static void main(String[] args) {
         assert true;
-        System.out.println("Ö´ĞĞÁËassert false;ÒÔºóµÄ¾ä×Ó");
+        System.out.println("æ‰§è¡Œäº†assert false;ä»¥åçš„å¥å­");
     }
 
 }

@@ -1,4 +1,4 @@
-package test.concurrency;
+ï»¿package test.concurrency;
 
 public class TestThread {
     private static /*volatile*/ boolean flag = false;
@@ -16,7 +16,7 @@ public class TestThread {
 	                        System.out.println("jinrudengdai");
 	                
 	            }
-	            System.out.println("½áÊøÑ­»·");
+	            System.out.println("ç»“æŸå¾ªç¯");
 	        } 
         }.start();
         try {

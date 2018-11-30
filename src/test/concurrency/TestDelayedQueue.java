@@ -1,4 +1,4 @@
-package test.concurrency;
+ï»¿package test.concurrency;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -38,30 +38,30 @@ enum Times {
     }
 }
 /**
- * DelayQueueÊµÏÖ¶à¿¼Éú¿¼ÊÔ
+ * DelayQueueå®ç°å¤šè€ƒç”Ÿè€ƒè¯•
  * @author Gss
  */
 public class TestDelayedQueue {
 
     public static void main(String[] args) throws InterruptedException {
         DelayQueue<Student> queue = new DelayQueue<>();
-        queue.add(new Student("·¶±ù±ù"));
-        queue.add(new Student("³É  Áú"));
-        queue.add(new Student("ÀîÒ»Í©"));
-        queue.add(new Student("ËÎĞ¡±¦"));
-        queue.add(new Student("Îâ  ¾©"));
-        queue.add(new Student("ÂÌ¾ŞÈË"));
-        queue.add(new Student("ºé½ğ±¦"));
-        queue.add(new Student("ÀîÔÆÁú"));
-        queue.add(new Student("¸ÖÌúÏÀ"));
-        queue.add(new Student("ÁõµÂ»ª"));
-        queue.add(new Student("´÷°²ÄÈ"));
+        queue.add(new Student("èŒƒå†°å†°"));
+        queue.add(new Student("æˆ  é¾™"));
+        queue.add(new Student("æä¸€æ¡"));
+        queue.add(new Student("å®‹å°å®"));
+        queue.add(new Student("å´  äº¬"));
+        queue.add(new Student("ç»¿å·¨äºº"));
+        queue.add(new Student("æ´ªé‡‘å®"));
+        queue.add(new Student("æäº‘é¾™"));
+        queue.add(new Student("é’¢é“ä¾ "));
+        queue.add(new Student("åˆ˜å¾·å"));
+        queue.add(new Student("æˆ´å®‰å¨œ"));
         queue.add(new Student("submit", Times.SUBMIT_TIME.getValue(), TimeUnit.SECONDS));
         while (true) {
-            Student s = queue.take(); // ±ØÒªÊ±½øĞĞ×èÈûµÈ´ı
+            Student s = queue.take(); // å¿…è¦æ—¶è¿›è¡Œé˜»å¡ç­‰å¾…
             if (s.getName().equals("submit")) {
-                System.out.println("Ê±¼äÒÑµ½£¬È«²¿½»¾í£¡");
-                // ÀûÓÃJava8 StreamÊ¹ÉĞÎ´½»¾íÑ§Éú½»¾í
+                System.out.println("æ—¶é—´å·²åˆ°ï¼Œå…¨éƒ¨äº¤å·ï¼");
+                // åˆ©ç”¨Java8 Streamä½¿å°šæœªäº¤å·å­¦ç”Ÿäº¤å·
                 queue.parallelStream()
                      .filter(v -> v.getExpire() >= s.getExpire())
                      .map(Student::submit)
@@ -76,29 +76,29 @@ public class TestDelayedQueue {
 
 class Student implements Delayed {
     private String name;
-    private long delay; // ¿¼ÊÔ»¨·ÑÊ±¼ä£¬µ¥Î»ÎªºÁÃë
-    private long expire; // ½»¾íÊ±¼ä£¬µ¥Î»ÎªºÁÃë
+    private long delay; // è€ƒè¯•èŠ±è´¹æ—¶é—´ï¼Œå•ä½ä¸ºæ¯«ç§’
+    private long expire; // äº¤å·æ—¶é—´ï¼Œå•ä½ä¸ºæ¯«ç§’
 
-    // ´Ë¹¹Ôì¿ÉËæ»úÉú³É¿¼ÊÔ»¨·ÑÊ±¼ä
+    // æ­¤æ„é€ å¯éšæœºç”Ÿæˆè€ƒè¯•èŠ±è´¹æ—¶é—´
     public Student(String name) {
         this.name = name;
-        this.delay = TimeUnit.MILLISECONDS.convert(getRandomSeconds(), TimeUnit.SECONDS); // Ëæ»úÉú³É¿¼ÊÔ»¨·ÑÊ±¼ä
+        this.delay = TimeUnit.MILLISECONDS.convert(getRandomSeconds(), TimeUnit.SECONDS); // éšæœºç”Ÿæˆè€ƒè¯•èŠ±è´¹æ—¶é—´
         this.expire = System.currentTimeMillis() + this.delay;
     }
 
-    // ´Ë¹¹Ôì¿ÉÖ¸¶¨¿¼ÊÔ»¨·ÑÊ±¼ä
+    // æ­¤æ„é€ å¯æŒ‡å®šè€ƒè¯•èŠ±è´¹æ—¶é—´
     public Student(String name, long delay, TimeUnit unit) {
         this.name = name;
         this.delay = TimeUnit.MILLISECONDS.convert(delay, unit);
         this.expire = System.currentTimeMillis() + this.delay;
     }
 
-    public int getRandomSeconds() { // »ñÈ¡Ëæ»ú»¨·ÑÊ±¼ä
+    public int getRandomSeconds() { // è·å–éšæœºèŠ±è´¹æ—¶é—´
         return new Random().nextInt(Times.MAX_RAND_TIME.getValue() - Times.SUMBMIT_LIMIT.getValue())
                 + Times.SUMBMIT_LIMIT.getValue();
     }
 
-    public Student submit() { // ÉèÖÃ»¨·ÑÊ±¼äºÍ½»¾íÊ±¼ä£¬¿¼ÊÔÊ±¼ä½áÊøÇ¿ÖÆ½»¾íÊ±µ÷ÓÃ´Ë·½·¨
+    public Student submit() { // è®¾ç½®èŠ±è´¹æ—¶é—´å’Œäº¤å·æ—¶é—´ï¼Œè€ƒè¯•æ—¶é—´ç»“æŸå¼ºåˆ¶äº¤å·æ—¶è°ƒç”¨æ­¤æ–¹æ³•
         setDelay(Times.SUBMIT_TIME.getValue(), TimeUnit.SECONDS);
         setExpire(System.currentTimeMillis());
         return this;
@@ -121,20 +121,20 @@ class Student implements Delayed {
     }
 
     @Override
-    public int compareTo(Delayed o) { // ´Ë·½·¨µÄÊµÏÖÓÃÓÚ¶¨ÒåÓÅÏÈ¼¶
+    public int compareTo(Delayed o) { // æ­¤æ–¹æ³•çš„å®ç°ç”¨äºå®šä¹‰ä¼˜å…ˆçº§
         long td = this.getDelay(TimeUnit.MILLISECONDS);
         long od = o.getDelay(TimeUnit.MILLISECONDS);
         return td > od ? 1 : td == od ? 0 : -1;
     }
 
     @Override
-    public long getDelay(TimeUnit unit) { // ÕâÀï·µ»ØµÄÊÇÊ£ÓàÑÓÊ±£¬µ±ÑÓÊ±Îª0Ê±£¬´ËÔªËØÑÓÊ±ÆÚÂú£¬¿É´Ótake()È¡³ö
+    public long getDelay(TimeUnit unit) { // è¿™é‡Œè¿”å›çš„æ˜¯å‰©ä½™å»¶æ—¶ï¼Œå½“å»¶æ—¶ä¸º0æ—¶ï¼Œæ­¤å…ƒç´ å»¶æ—¶æœŸæ»¡ï¼Œå¯ä»take()å–å‡º
         return unit.convert(this.expire - System.currentTimeMillis(), TimeUnit.MILLISECONDS);
     }
 
     @Override
     public String toString() {
-        return "Ñ§ÉúĞÕÃû£º" + this.name + ",¿¼ÊÔÓÃÊ±£º" + TimeUnit.SECONDS.convert(delay, TimeUnit.MILLISECONDS) + ",½»¾íÊ±¼ä£º"
+        return "å­¦ç”Ÿå§“åï¼š" + this.name + ",è€ƒè¯•ç”¨æ—¶ï¼š" + TimeUnit.SECONDS.convert(delay, TimeUnit.MILLISECONDS) + ",äº¤å·æ—¶é—´ï¼š"
                 + DateFormat.getDateTimeInstance().format(new Date(this.expire));
     }
 }

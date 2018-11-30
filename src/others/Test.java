@@ -1,4 +1,4 @@
-package others;
+锘縫ackage others;
 
 public class Test {
 
@@ -10,7 +10,7 @@ public class Test {
 		Integer a = 4;
 		String[] b = {"a","v"};
 		System.out.println(b[1].compareTo(b[0]));
-		System.out.println("============父类引用==============");
+		System.out.println("============鐖剁被寮曠敤==============");
 		
 		
 		Apple apple2 = new HFApple();

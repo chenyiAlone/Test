@@ -1,4 +1,4 @@
-package test.generics;
+﻿package test.generics;
 
 public class TestErasure<T extends Dad> {
     private T t;

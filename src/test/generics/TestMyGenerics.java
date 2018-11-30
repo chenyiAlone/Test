@@ -1,4 +1,4 @@
-package test.generics;
+ï»¿package test.generics;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,6 +39,6 @@ class C extends SelfBounded<C>{
 class D extends A{}
 class F extends A{}
   
-//ÒòÎªÀàDÃ»ÓĞ¼Ì³ĞSelfBounded£¬ËùÒÔ¸ÃÀà±àÒëÊ§°Ü¡£  
+//å› ä¸ºç±»Dæ²¡æœ‰ç»§æ‰¿SelfBoundedï¼Œæ‰€ä»¥è¯¥ç±»ç¼–è¯‘å¤±è´¥ã€‚  
 //class E extends SelfBounded<D>{}  
   

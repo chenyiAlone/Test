@@ -1,9 +1,9 @@
-package test._for;
+锘縫ackage test._for;
 
 public class TestArguments {
 	public static void print(String... strs) {
 		if(strs==null) {
-			System.out.println("可变序列为空");
+			System.out.println("鍙彉搴忓垪涓虹┖");
 		}
 		for(String str:strs) {
 			System.out.println(str);

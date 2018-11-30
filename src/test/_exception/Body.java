@@ -1,4 +1,4 @@
-package test._exception;
+ï»¿package test._exception;
 
 import java.io.PrintWriter;
 import java.io.StringWriter;
@@ -26,14 +26,14 @@ public class Body {
         try {
             b();
         } catch (Exception e) {
-            System.out.println("aÕâÀï´íÎóÁË");
+            System.out.println("aè¿™é‡Œé”™è¯¯äº†");
 //            e.printStackTrace();
             logExcepiton(e);
             throw e;
         } 
     }
     public void f() throws Exception {
-    	throw new Exception("ÐÂµÄ");
+    	throw new Exception("æ–°çš„");
     }
     public void b() throws Exception  {
 
@@ -44,7 +44,7 @@ public class Body {
             int f;
 //            f = i / j;
         } catch (Exception e) {
-            System.out.println("bÕâÀï´íÎóÁË");
+            System.out.println("bè¿™é‡Œé”™è¯¯äº†");
 //            e.printStackTrace();
             logExcepiton(e);
             throw e;

@@ -1,12 +1,12 @@
-package test.iterfacr;
+ï»¿package test.iterfacr;
 
 public class Dog /*implements Animal*/{
 	public void run() {
-		System.out.println("Dog !ÅÜÅÜÅÜÅÜ");
+		System.out.println("Dog !è·‘è·‘è·‘è·‘");
 		
 	}
 	public void dog() {
-		System.out.println("ÍôÍôÍôÍôÍô");
+		System.out.println("æ±ªæ±ªæ±ªæ±ªæ±ª");
 	} 
 
 }

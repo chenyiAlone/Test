@@ -1,4 +1,4 @@
-package test.value;
+﻿package test.value;
 
 public class Test {
 	public static void main(String[] args) {

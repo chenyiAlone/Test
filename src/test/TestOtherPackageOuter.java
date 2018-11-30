@@ -1,4 +1,4 @@
-package test;
+﻿package test;
 
 import test.outerInter.Outer;
 public class TestOtherPackageOuter {

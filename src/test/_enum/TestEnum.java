@@ -1,4 +1,4 @@
-package test._enum;
+ï»¿package test._enum;
 
 import java.lang.reflect.Method;
 
@@ -55,7 +55,7 @@ enum Eat implements Food{
 enum MyEnum{
 	TESET(10,"my"),VOID(50,"ms"),INETEST(2);
 	private int i;
-	private MyEnum(int i,String str) {this.i = i;this.str = str;System.out.println("µ÷ÓÃÁË¹¹ÔìÆ÷£¡");}
+	private MyEnum(int i,String str) {this.i = i;this.str = str;System.out.println("è°ƒç”¨äº†æ„é€ å™¨ï¼");}
 	private MyEnum(int i) {this.i =i;}
 	private String str;
 	public void setStr(String str) {

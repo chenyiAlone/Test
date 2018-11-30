@@ -1,4 +1,4 @@
-package test.lang;
+﻿package test.lang;
 
 public class TestString {
 	public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class TestString {
 		
 //		for(String str:strs) {
 //			if(str==null) {
-//				System.out.println("�մ�");
+//				System.out.println("空串");
 //			}
 //			System.out.println(str+(i++));
 //		}

@@ -1,4 +1,4 @@
-package test.remove;
+ï»¿package test.remove;
 
 public class test {
 	public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class test {
 	}
 	
 	
-	//ËÄÎ»ÊıºÍÎª10
+	//å››ä½æ•°å’Œä¸º10
 	public static void found() {
 		int a,b,c,d;
 		for(a=1;a<10;a++) {

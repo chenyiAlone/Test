@@ -1,4 +1,4 @@
-package test.poolymorphic;
+ï»¿package test.poolymorphic;
 
 public class Test {
 
@@ -16,15 +16,15 @@ public static void main(String[] args) {
 }
 class A{
 	static {
-		System.out.println("A±»³õÊ¼»¯");
+		System.out.println("Aè¢«åˆå§‹åŒ–");
 	}
 	public void move(){
-		System.out.println("move()-->ÒÆ¶¯ÁË!");
+		System.out.println("move()-->ç§»åŠ¨äº†!");
 
 	}
 }
 class B extends A{
 	static{
-		System.out.println("B±»³õÊ¼»¯");
+		System.out.println("Bè¢«åˆå§‹åŒ–");
 	}
 }

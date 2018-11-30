@@ -1,18 +1,18 @@
-package test.generics;
+ï»¿package test.generics;
 
 /**
- * ¼Ì³ĞÊµÏÖÁË´øÓĞ·ºĞÍ²ÎÊıµÄ½Ó¿ÚµÄ¸¸ÀàÊ±£¬²»ĞèÒª´øÓĞ¸¸ÀàÊµÏÖµÄĞÍ²ÎÊı£¬²¢ÇÒ¿ÉÒÔ¼ÓÈë×Ô¼ºµÄÀàĞÍ²ÎÊı
+ * ç»§æ‰¿å®ç°äº†å¸¦æœ‰æ³›å‹å‚æ•°çš„æ¥å£çš„çˆ¶ç±»æ—¶ï¼Œä¸éœ€è¦å¸¦æœ‰çˆ¶ç±»å®ç°çš„å‹å‚æ•°ï¼Œå¹¶ä¸”å¯ä»¥åŠ å…¥è‡ªå·±çš„ç±»å‹å‚æ•°
  * @author chenyiAlone
  *
  * @param <T>
  * @param <E>
  * 
- * ¸´Ï° 11.28
+ * å¤ä¹  11.28
  */
 public class TestGenericsExtends<T, E> extends Generiscs {
     
 }
-// ¼Ì³ĞÊµÏÖÁËComparable½Ó¿ÚµÄÀà²»ÄÜÔÙ´ÎÊµÏÖÕâ¸öÀàÀ´Íê³É¶Ôµ±Ç°ÀàµÄÖ±½Ó±È½Ï
+// ç»§æ‰¿å®ç°äº†Comparableæ¥å£çš„ç±»ä¸èƒ½å†æ¬¡å®ç°è¿™ä¸ªç±»æ¥å®Œæˆå¯¹å½“å‰ç±»çš„ç›´æ¥æ¯”è¾ƒ
 //public class TestGenericsExtends extends Generiscs implements Comparable<TestGenericsExtends>{
     
 //}

@@ -1,6 +1,6 @@
-package test.lang;
+锘縫ackage test.lang;
 /**
- * 测试抽象类中是否必须包含抽象方法
+ * 娴嬭瘯鎶借薄绫讳腑鏄惁蹇呴』鍖呭惈鎶借薄鏂规硶
  * @author chenyiAlone
  *
  */

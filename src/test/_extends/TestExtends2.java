@@ -1,4 +1,4 @@
-package test._extends;
+﻿package test._extends;
 
 public class TestExtends2 {
     public static void main(String[] args) {

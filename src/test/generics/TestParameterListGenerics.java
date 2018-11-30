@@ -1,14 +1,14 @@
-package test.generics;
+ï»¿package test.generics;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class TestParameterListGenerics {
-    public static void test(List<Food> fList) { // ÈİÆ÷×÷Îª¿ÉÒÔÖ¸¶¨·ºĞÍÀàĞÍ
+    public static void test(List<Food> fList) { // å®¹å™¨ä½œä¸ºå¯ä»¥æŒ‡å®šæ³›å‹ç±»å‹
         
     }
     public static void main(String[] args) {
-//!        test(new ArrayList<Water>());    // Õâ¾ä²¢²»ÄÜÍ¨¹ı±àÒë£¬ÎŞ·¨´«ÈëÓµÓĞ·ÇÖ¸¶¨·ºĞÍµÄÈİÆ÷
+//!        test(new ArrayList<Water>());    // è¿™å¥å¹¶ä¸èƒ½é€šè¿‡ç¼–è¯‘ï¼Œæ— æ³•ä¼ å…¥æ‹¥æœ‰éæŒ‡å®šæ³›å‹çš„å®¹å™¨
     }
 }
 interface Food {}

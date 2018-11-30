@@ -1,4 +1,4 @@
-package test.lang;
+ï»¿package test.lang;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,9 +13,9 @@ public class TestFinal {
 	public static void main(String[] args) {
 	    System.out.println(testFinallyAndReturn());
 //	    finallySleep();
-//	    testFinalEvent("²âÊÔ");
-//	    testFinalEvent(new String("²âÊÔ2"));
-//	    System.out.println("·½·¨½áÊø");
+//	    testFinalEvent("æµ‹è¯•");
+//	    testFinalEvent(new String("æµ‹è¯•2"));
+//	    System.out.println("æ–¹æ³•ç»“æŸ");
 	}
 	public static void testFinalEvent(final String str) {
 	    System.out.println(str);

@@ -1,10 +1,10 @@
-package others;
+ï»¿package others;
 
 
 public abstract class Fruit  {
 	abstract  void eat();
 //	public static void eat() {
-//		System.out.println("Fruit£¡");
+//		System.out.println("Fruitï¼");
 //	}
 }
 

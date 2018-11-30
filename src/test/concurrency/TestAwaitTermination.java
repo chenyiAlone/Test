@@ -1,4 +1,4 @@
-package test.concurrency;
+ï»¿package test.concurrency;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -24,7 +24,7 @@ class MyRunnable implements Runnable{
     public void run() {
         try {
             Thread.sleep(5000);
-            System.out.println("µÈ´ıÍê³É£¡");
+            System.out.println("ç­‰å¾…å®Œæˆï¼");
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

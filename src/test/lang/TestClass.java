@@ -1,4 +1,4 @@
-package test.lang;
+﻿package test.lang;
 
 public class TestClass {
     public static void main(String[] args) {

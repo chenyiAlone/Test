@@ -1,32 +1,25 @@
-package test._collections;
+ï»¿package test._collections;
 
 import java.util.ArrayList;
 import java.util.List;
+
 /**
- * ²âÊÔ List<E> printÊ±ÊÇ·ñ±éÀú¶ÔÏó²¢µ÷ÓÃ¶ÔÏóµÄ toString() ·½·¨
+ * æµ‹è¯•Listèƒ½å¦åŠ å…¥ä¸º0çš„å¤šä¸ªIntegerå¯¹è±¡
  * @author chenyiAlone
  *
  */
 public class TestList {
-	public static void main(String[] args) {
-		List<Demo> list = new ArrayList<>();
-		list.add(new Demo());
-		test(list);
-		System.out.println(list);
-		
-	}
-	public static void test(List<Demo> list) {
-		Demo d = list.get(0);
-		d.count = 10;
-		list.set(0, d);
-	}
+    public static void main(String[] args) {
+        List<Integer> list = new ArrayList<>();
+        list.add(Integer.valueOf(0));
+        list.add(Integer.valueOf(0));
+        list.add(Integer.valueOf(0));
+        System.out.println(list.size());
+        for (int i : list) {
+            System.out.println(i);
+        }
+        List<Integer> ls = new ArrayList<>();
+        System.out.println(ls.containsAll(list));
+    }
 
-}
-class Demo{
-	int count = 0;
-	@Override
-	public String toString() {
-		// TODO Auto-generated method stub
-		return getClass().getSimpleName()+count;
-	}
 }

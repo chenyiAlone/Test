@@ -1,10 +1,10 @@
-package test.outerInter;
+ï»¿package test.outerInter;
 
 public class Outer {
 	private int count = 0;
 	public class Inter{
 		public Inter() {
-			System.out.println("ĞÂ½¨InterÀà");
+			System.out.println("æ–°å»ºInterç±»");
 		}
 		public void play() {
 			System.out.println("Inter.Play();" + count++);
@@ -20,7 +20,7 @@ public class Outer {
 		return new Inter();
 	}
 	public Outer() {
-		System.out.println("ĞÂ½¨OuterÀà");
+		System.out.println("æ–°å»ºOuterç±»");
 	}
 	public static void main(String[] args) {
 		Outer out = new Outer();
@@ -43,7 +43,7 @@ public class Outer {
 class Outer2{
 	public class Inter{
 		public Inter() {
-			System.out.println("ĞÂ½¨InterÀà");
+			System.out.println("æ–°å»ºInterç±»");
 		}
 		public void play() {
 			System.out.println("Play();");

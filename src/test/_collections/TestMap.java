@@ -1,26 +1,20 @@
-package test._collections;
+锘縫ackage test._collections;
 
 import java.util.HashMap;
-import java.util.Map;
-/**
- * 测试	Map<K,V> 中 K 和 V 的属性
- * 
- * @author chenyiAlone
- *
- */
-public class TestMap {
-	public static void main(String[] args) {
-		Map<String,Object> map = new HashMap<>();
-		
-		//Map<K,V>中不允许K重复，或者V为null
-		map.put("1",null);
-		map.put("2", new Object());
-		map.put("3", new Object());
-		map.put("4", new Object());
-		for(String s:map.keySet()) {
-			System.out.println(map.get(s).hashCode());
-			
-		}
-	}
 
+public class TestMap {
+    public static void main(String[] args) {
+        
+        HashMap<Integer,String> map = new HashMap<>();
+        map.put(1, "test");
+        map.put(2, "map");
+        map.put(3, "foreach");
+        
+        // jdk 1.8 涓姞鍏ョ殑鏂扮殑閬嶅巻鏂规硶
+        map.forEach((Integer,String)->{
+            
+            System.out.println(Integer);
+            System.out.println(String);
+        });
+    }
 }

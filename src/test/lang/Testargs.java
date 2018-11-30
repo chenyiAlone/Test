@@ -1,8 +1,8 @@
-package test.lang;
+锘縫ackage test.lang;
 
 public class Testargs {
 	public static void main(String[] f) {
-		System.out.println("mian();中的参数可以修改");
+		System.out.println("mian();涓殑鍙傛暟鍙互淇敼");
 		throw new RuntimeException();
 	}
 }

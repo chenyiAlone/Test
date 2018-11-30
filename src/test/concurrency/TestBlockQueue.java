@@ -1,4 +1,4 @@
-package test.concurrency;
+锘縫ackage test.concurrency;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ExecutorService;
@@ -17,7 +17,7 @@ public class TestBlockQueue {
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
-                System.out.println("中断了blockingQueue.take()上的等待");
+                System.out.println("涓柇浜哹lockingQueue.take()涓婄殑绛夊緟");
             }
         });
 

@@ -1,4 +1,4 @@
-package test._package.package2;
+﻿package test._package.package2;
 
 import test._package.package1.TestInterface;
 

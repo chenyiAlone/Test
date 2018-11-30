@@ -1,4 +1,4 @@
-package test.iterator;
+﻿package test.iterator;
 
 //: holding/AdapterMethodIdiom.java
 // The "Adapter Method" idiom allows you to use foreach

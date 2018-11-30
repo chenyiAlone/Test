@@ -1,4 +1,4 @@
-package test;
+﻿package test;
 
 public class Anonymous {
 	public Base base() {

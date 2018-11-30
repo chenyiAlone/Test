@@ -1,17 +1,17 @@
-package test.iterfacr2;
+ï»¿package test.iterfacr2;
 
 public class Dog extends Animal{
 	public Dog(String name) {
-		System.out.println("³õÊ¼»¯·Ç¾²Ì¬ÊôĞÔ"+name);
+		System.out.println("åˆå§‹åŒ–éé™æ€å±æ€§"+name);
 	}
 	public Dog() {
 	}
 	public void run() {
-		System.out.println("Dog !ÅÜÅÜÅÜÅÜ");
+		System.out.println("Dog !è·‘è·‘è·‘è·‘");
 		
 	}
 	public void dog() {
-		System.out.println("ÍôÍôÍôÍôÍô");
+		System.out.println("æ±ªæ±ªæ±ªæ±ªæ±ª");
 	} 
 
 }

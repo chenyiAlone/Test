@@ -1,4 +1,4 @@
-package testsomething;
+锘縫ackage testsomething;
 
 public class ExtendMethods extends A {
     public void diffcultMethods() {
@@ -6,7 +6,7 @@ public class ExtendMethods extends A {
             System.out.println("ExtendMethods.diffcultMethods()!");
             return;
         } finally {
-            super.easyMethod(); // 完成对基类方法的扩展
+            super.easyMethod(); // 瀹屾垚瀵瑰熀绫绘柟娉曠殑鎵╁睍
         }
     }
     public static void main(String[] args) {

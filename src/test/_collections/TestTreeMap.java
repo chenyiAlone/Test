@@ -1,4 +1,4 @@
-package test._collections;
+ï»¿package test._collections;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -6,10 +6,10 @@ import java.util.Map;
 public class TestTreeMap {
 	public static void main(String[] args) {
 		Map<Integer,String> map = new HashMap<Integer,String>();
-		map.put(Integer.valueOf(9),"¾Å");
-		map.put(Integer.valueOf(8),"°Ë");
-		map.put(Integer.valueOf(7),"Æß");
-		map.put(Integer.valueOf(6),"Áù");
+		map.put(Integer.valueOf(9),"ä¹");
+		map.put(Integer.valueOf(8),"å…«");
+		map.put(Integer.valueOf(7),"ä¸ƒ");
+		map.put(Integer.valueOf(6),"å…­");
 		map.get(8);
 		map.get(8);
 		

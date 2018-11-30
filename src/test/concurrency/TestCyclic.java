@@ -1,4 +1,4 @@
-package test.concurrency;
+锘縫ackage test.concurrency;
 
 import java.util.concurrent.BrokenBarrierException;
 import java.util.concurrent.CyclicBarrier;
@@ -25,14 +25,14 @@ public class TestCyclic {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
-                System.out.println("新建线程等待终止");
+                System.out.println("鏂板缓绾跨▼绛夊緟缁堟");
             }
         }.start();
         try {
             Thread.sleep(1000);
             System.out.println("cyclicbarrier.wait();");
             c.await();
-            System.out.println("main线程等待终止");
+            System.out.println("main绾跨▼绛夊緟缁堟");
         } catch (InterruptedException e) {
             e.printStackTrace();
         } catch (BrokenBarrierException e) {
@@ -44,7 +44,7 @@ public class TestCyclic {
         CyclicBarrier v = new CyclicBarrier(2,new Runnable() {
             @Override
             public void run() {
-                System.out.println("执行开启了new Thread()");
+                System.out.println("鎵ц寮�鍚簡new Thread()");
             }
         });
         new Thread() {public void run() {
@@ -62,7 +62,7 @@ public class TestCyclic {
         }; }.start();
         try {
             v.await();
-            System.out.println("await()后面的代码被执行");
+            System.out.println("await()鍚庨潰鐨勪唬鐮佽鎵ц");
         } catch (InterruptedException | BrokenBarrierException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

@@ -1,4 +1,4 @@
-package testsomething;
+﻿package testsomething;
 
 public class CharAscii {
     public static void test(int i) {

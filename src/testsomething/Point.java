@@ -1,4 +1,4 @@
-package testsomething;
+﻿package testsomething;
 
 public class Point {
     private static class Node{

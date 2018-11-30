@@ -1,4 +1,4 @@
-package test._interface;
+﻿package test._interface;
 
 public class TestInterface implements Obj{
 	public static void main(String[] args) {

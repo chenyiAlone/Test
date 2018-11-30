@@ -1,4 +1,4 @@
-package test.deadLock;
+ï»¿package test.deadLock;
 
 
 public class Main {  
@@ -16,13 +16,13 @@ class Sync {
     public  void test() {
     	synchronized(Sync.class) {
     		System.out.print(Thread.currentThread().getName()+"-->");
-	        System.out.println("test¿ªÊ¼..");  
+	        System.out.println("testå¼€å§‹..");  
 	        try {  
 	           Thread.sleep(1000);  
 	        } catch (InterruptedException e) {  
 	            e.printStackTrace();  
 	        }  
-	        System.out.println("test½áÊø..");  
+	        System.out.println("testç»“æŸ..");  
     	}
     }  
 }  

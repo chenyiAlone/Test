@@ -1,9 +1,9 @@
-package test._sort;
+ï»¿package test._sort;
 
 import java.util.TreeSet;
 /**
- * ²âÊÔTreeSetµÄÄ¬ÈÏµÄComparableÊ¹ÓÃµÄÅÅĞò·½Ê½
- * @author Ø¼³¾Òİc
+ * æµ‹è¯•TreeSetçš„é»˜è®¤çš„Comparableä½¿ç”¨çš„æ’åºæ–¹å¼
+ * @author ä¸¶å°˜é€¸c
  *
  */
 public class TestSort {
@@ -31,7 +31,7 @@ public class TestSort {
 		}
 		
 		/**
-		 * Ä¬ÈÏÅÅĞò·½Ê½thisÓë²ÎÊı±È½Ï£¬´óÓÚÎª1£¬Ğ¡ÓÚÎª-1£¬ÏàµÈÎª0
+		 * é»˜è®¤æ’åºæ–¹å¼thisä¸å‚æ•°æ¯”è¾ƒï¼Œå¤§äºä¸º1ï¼Œå°äºä¸º-1ï¼Œç›¸ç­‰ä¸º0
 		 */
 		@Override
 		public int compareTo(IntSort arg0) {	

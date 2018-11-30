@@ -1,4 +1,4 @@
-package test.access_permissions._protected.package1;
+﻿package test.access_permissions._protected.package1;
 
 import test.access_permissions._protected.package2.Aprotected;
 

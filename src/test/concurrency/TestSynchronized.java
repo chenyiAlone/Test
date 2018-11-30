@@ -1,4 +1,4 @@
-package test.concurrency;
+ï»¿package test.concurrency;
 
 import java.util.concurrent.TimeUnit;
 
@@ -15,7 +15,7 @@ public class TestSynchronized {
 //			}
 //			System.out.println(flag);
 		}
-		System.out.println("³É¹¦´ò¶ÏÁËwhile()");
+		System.out.println("æˆåŠŸæ‰“æ–­äº†while()");
 	}
 	
 	public static  void main(String[] args) {
@@ -31,10 +31,10 @@ public class TestSynchronized {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		System.out.println("ÐÞ¸Ä i :  3->5 ;");
+		System.out.println("ä¿®æ”¹ i :  3->5 ;");
 		i=5;
 		System.out.println(i);
-		System.out.println("ÐÞ¸Äflag: false->  true;");
+		System.out.println("ä¿®æ”¹flag: false->  true;");
 //		while(!flag) {
 //			
 //			flag = true;
@@ -44,7 +44,7 @@ public class TestSynchronized {
 		
 	}
 	/**
-	 * ²âÊÔsynchronizedºÍË­ÊÇµÈ¼ÛµÄ
+	 * æµ‹è¯•synchronizedå’Œè°æ˜¯ç­‰ä»·çš„
 	 */
 	public static void testSyncEquals() {
 		Run r = new Run();
@@ -69,7 +69,7 @@ public class TestSynchronized {
 	
 	}
 	/**
-	 * ²âÊÔsynchronizedËø¶¨µÄÊÇ¶ÔÏó
+	 * æµ‹è¯•synchronizedé”å®šçš„æ˜¯å¯¹è±¡
 	 */
 	public static void testSynchronized() {
 //		Run r = new Run();
@@ -88,7 +88,7 @@ public class TestSynchronized {
 			{new Run().play();}
 		}.start();
 		
-//		System.out.println("main ¿ªÊ¼µ÷ÓÃr.play()");
+//		System.out.println("main å¼€å§‹è°ƒç”¨r.play()");
 //		r.play();
 		
 		
@@ -106,13 +106,13 @@ public class TestSynchronized {
 	}
 	
 	public synchronized void play() {
-//		System.out.println("½øÈëÁËRunplay·½·¨ -->"+ count + " µ«Î´½øÈëÓò");
+//		System.out.println("è¿›å…¥äº†Runplayæ–¹æ³• -->"+ count + " ä½†æœªè¿›å…¥åŸŸ");
 //		synchronized (this){
 			
 			try {
-				System.out.println(Thread.currentThread()+"½øÈëÁËRunsynchronizedÓò -->"+ number + "   ¿ªÊ¼play();");
+				System.out.println(Thread.currentThread()+"è¿›å…¥äº†RunsynchronizedåŸŸ -->"+ number + "   å¼€å§‹play();");
 				Thread.sleep(3000);
-				System.out.println(Thread.currentThread()+"½øÈëÁËRunsynchronizedÓò -->"+ number + "   ½áÊøplay();");
+				System.out.println(Thread.currentThread()+"è¿›å…¥äº†RunsynchronizedåŸŸ -->"+ number + "   ç»“æŸplay();");
 //				System.out.println("Run -->"+ count + "   play();");
 			} catch (InterruptedException e) {
 				e.printStackTrace();
@@ -123,9 +123,9 @@ public class TestSynchronized {
 	
 	public void countinueplay() {
 		try {
-			System.out.println("½øÈëRun -->"+ count + "   countinueplay();");
+			System.out.println("è¿›å…¥Run -->"+ count + "   countinueplay();");
 			Thread.sleep(3000);
-			System.out.println("½áÊøRun -->"+ count + "   countinueplay();");
+			System.out.println("ç»“æŸRun -->"+ count + "   countinueplay();");
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -140,7 +140,7 @@ public class TestSynchronized {
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-				System.out.println("µ÷ÓÃÁËSynchronized(this)-->"+i);
+				System.out.println("è°ƒç”¨äº†Synchronized(this)-->"+i);
 			}
 		}
 	}
@@ -153,51 +153,51 @@ public class TestSynchronized {
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-//				System.out.println("µ÷ÓÃÁËSynchronized(this)-->"+number);
-				System.out.println("µ÷ÓÃÁËSynchronized(number)-->"+i);
+//				System.out.println("è°ƒç”¨äº†Synchronized(this)-->"+number);
+				System.out.println("è°ƒç”¨äº†Synchronized(number)-->"+i);
 			}
 		}
 	}
 	
 	
 	public /*synchronized*/ void test() {
-		System.out.println("µ÷ÓÃÁËRun -->"+ count + "   test");
+		System.out.println("è°ƒç”¨äº†Run -->"+ count + "   test");
 	}
 	public  void testUnSynchronized() {
-		System.out.println("µ÷ÓÃÁËRun -->"+ count + "   testUnSynchronized()!");
+		System.out.println("è°ƒç”¨äº†Run -->"+ count + "   testUnSynchronized()!");
 		for(int i=0;i<10;i++) {
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			System.out.println("µ÷ÓÃÁËUnSynchronized()-->"+i);
+			System.out.println("è°ƒç”¨äº†UnSynchronized()-->"+i);
 		}
 	}
 	
 	public void testSynchronizedThisClass() {
 		synchronized(Run.class) {
-			System.out.println("µ÷ÓÃÁËRun -->"+ count + "   testSynchronizedThisClass()!");
+			System.out.println("è°ƒç”¨äº†Run -->"+ count + "   testSynchronizedThisClass()!");
 			for(int i=0;i<10;i++) {
 				try {
 					Thread.sleep(1000);
 				} catch (InterruptedException e) {
 					e.printStackTrace();
 				}
-				System.out.println("µ÷ÓÃÁËSynchronzied(this.class)->"+i);
+				System.out.println("è°ƒç”¨äº†Synchronzied(this.class)->"+i);
 			}
 		}
 	}
 	
 	public synchronized void testSynchronized() {
-		System.out.println("µ÷ÓÃÁËRun -->"+ count + "   testSynchronized!");
+		System.out.println("è°ƒç”¨äº†Run -->"+ count + "   testSynchronized!");
 		for(int i=0;i<10;i++) {
 			try {
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				e.printStackTrace();
 			}
-			System.out.println("µ÷ÓÃÁËSynchronized¿é-->"+i);
+			System.out.println("è°ƒç”¨äº†Synchronizedå—-->"+i);
 		}
 	}
 }

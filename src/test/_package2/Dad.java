@@ -1,4 +1,4 @@
-package test._package2;
+﻿package test._package2;
 
 public class Dad {
 	public void f1() {

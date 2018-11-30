@@ -1,4 +1,4 @@
-package test;
+锘縫ackage test;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -24,7 +24,7 @@ public class Demo01 {
 		List<Orange> olist = new ArrayList<Orange>();
 		List<? extends Fruit> list = new ArrayList<>();
 		list.contains(new Orange());
-//!		list.add(new Apple());		//-->编译器会限制一切拥有泛型的方法，例如：add(E e);
+//!		list.add(new Apple());		//-->缂栬瘧鍣ㄤ細闄愬埗涓�鍒囨嫢鏈夋硾鍨嬬殑鏂规硶锛屼緥濡傦細add(E e);
 //!		list.add(new Object());
 		
 	}

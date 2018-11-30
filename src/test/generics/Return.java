@@ -1,4 +1,4 @@
-package test.generics;
+﻿package test.generics;
 
 public class Return<E> {
     public  E test(E e) {

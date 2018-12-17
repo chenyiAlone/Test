@@ -1,15 +1,44 @@
 ﻿package testsomething;
-
+import static util.Utils.*;
 public class Kmp {
-	public static void main(String[] args) {
-		String str = "abaabcac";
+	public static int[][] createDFA(String pattern) {
+	    
+        int M = pattern.length();
+        int R = 256;
+        int[][] dfa = new int[R][M];
+        dfa[pattern.charAt(0)][0] = 1;
+        for (int X = 0, j = 1; j < M; j++) {
+//            printArray(dfa[pattern.charAt(0)]);
+            for (int c = 0; c < R; c++)
+                dfa[c][j] = dfa[c][X];
+            dfa[pattern.charAt(j)][j] = j + 1;
+            X = dfa[pattern.charAt(j)][X];
+                
+        }
+        
+        
+        return dfa;
+    }
+    public static void main(String[] args) {
+		String str = "ababac";
+		int[][] dfa = createDFA(str);
+		for (int i = 'a'; i <= 'c'; i++) {
+		    System.out.print((char)i+ " ");
+//		    printArray(createDFA(str)[i]);
+		    printArray(dfa[i]);
+		}
 //		int[] array = next(str);
 //		for(int i = 1; i < array.length; i++){
 //			System.out.print(array[i] + " ");
 //		}
-		System.out.println(kmpSearch("bacbababadababacambabacaddababacasdsd", "ababaca"));
+//		System.out.println(kmpSearch("bacbababadababacambabacaddababacasdsd", "ababaca"));
 	}
-	
+	/**
+	 * kmp 1
+	 * @param str
+	 * @param pattern
+	 * @return
+	 */
 	public static int kmpSearch(String str, String pattern) {
 	    int n = str.length(), m = pattern.length();
 	    int ans = -1;
@@ -57,6 +86,11 @@ public class Kmp {
 	    return ans;
 	}
 	
+	public static int search(String txt) {
+	    
+	    
+	    return 0;
+	}
 	
 	
 	

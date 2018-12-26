@@ -19,14 +19,25 @@ public class Kmp {
         
         return dfa;
     }
+	
+	public static void testKmp(String s) {
+	    printArray(next(s));
+	}
+	
     public static void main(String[] args) {
-		String str = "ababac";
+		String str = "baabab";
+		testKmp(str);
+		
+		
+		/*
 		int[][] dfa = createDFA(str);
 		for (int i = 'a'; i <= 'c'; i++) {
 		    System.out.print((char)i+ " ");
+	    
 //		    printArray(createDFA(str)[i]);
 		    printArray(dfa[i]);
 		}
+		*/
 //		int[] array = next(str);
 //		for(int i = 1; i < array.length; i++){
 //			System.out.print(array[i] + " ");
@@ -101,6 +112,7 @@ public class Kmp {
 		for (char c : str.toCharArray()) {
 			chars[k++] = c;
 		};
+		next[0] = -1;
 		next[1] = 0;
 		int
 			i = 1,

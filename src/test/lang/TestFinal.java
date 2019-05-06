@@ -31,11 +31,13 @@ public class TestFinal {
 	        }
 	    }
 	}
-	public static int testFinallyAndReturn() {
+	public static String testFinallyAndReturn() {
 	    try {
-	        return 1;
+	        return "return";
 	    } finally {
-	        System.out.println(0);
+	        System.out.println("finally");
+//	        finally 块中加入了 return 后会出现警告 //! finally block does not complete normally
+//	        return "finally' return";
 	    }
 	}
 	

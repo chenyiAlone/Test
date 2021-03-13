@@ -1,0 +1,56 @@
+<Configuration status="INFO">
+
+    <properties>
+        <property name="PROJECT_NAME">log4j2</property>
+        <property name="LOG_DIR">${sys:user.home}/logs/${PROJECT_NAME}</property>
+        <property name="INFO_FILE_NAME">server-info</property>
+        <property name="ERROR_FILE_NAME">server-error</property>
+        <property name="PATTERN_LAYOUT">%d{yyyy-MM-dd HH:mm:ss,SSS} [%t] [%p] [%C{1.}:%L] %m%n</property>
+    </properties>
+
+    <Appenders>
+
+        <!-- 定义控制台输出 -->
+        <Console name="CONSOLE-LOG" target="SYSTEM_OUT" follow="true">
+            <PatternLayout pattern="${PATTERN_LAYOUT}"/>
+        </Console>
+
+        <RollingRandomAccessFile name="INFO-LOG"
+            immediateFlush="true"
+            bufferSize="1024"
+            fileName="${LOG_DIR}/${INFO_FILE_NAME}.log"
+            filePattern="${LOG_DIR}/${INFO_FILE_NAME}.log.%d{yyyy-MM-dd-HH}">
+            <PatternLayout pattern="${PATTERN_LAYOUT}"/>
+            <Filters>
+                <ThresholdFilter level="WARN" onMatch="DENY" onMismatch="NEUTRAL"/>
+                <ThresholdFilter level="ERROR" onMatch="DENY" onMismatch="NEUTRAL"/>
+                <ThresholdFilter level="INFO" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingRandomAccessFile>
+
+        <RollingRandomAccessFile name="ERROR-LOG"
+            immediateFlush="true"
+            bufferSize="1024"
+            fileName="${LOG_DIR}/${ERROR_FILE_NAME}.log"
+            filePattern="${LOG_DIR}/${ERROR_FILE_NAME}.log.%d{yyyy-MM-dd-HH}">
+            <PatternLayout pattern="${PATTERN_LAYOUT}"/>
+            <Filters>
+                <ThresholdFilter level="ERROR" onMatch="ACCEPT" onMismatch="DENY"/>
+            </Filters>
+            <Policies>
+                <TimeBasedTriggeringPolicy interval="1" modulate="true"/>
+            </Policies>
+        </RollingRandomAccessFile>
+
+    </Appenders>
+
+    <Loggers>
+        <Root level="INFO">
+            <AppenderRef ref="CONSOLE-LOG"/>
+            <AppenderRef ref="INFO-LOG"/>
+        </Root>
+    </Loggers>
+</Configuration>

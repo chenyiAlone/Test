@@ -1,0 +1,12 @@
+package com.demo.test.test.lang;
+
+public class TestHash {
+	public static void main(String[] args) {
+		System.out.println(new Hash().hashCode());
+		System.out.println(new Hash().hashCode());
+	}
+
+}
+class Hash{
+	
+}

@@ -1,0 +1,6 @@
+package com.demo.test.test.iterfacr2;
+
+public  abstract class Animal {
+	abstract void run();
+}
+ 

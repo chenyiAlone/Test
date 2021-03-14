@@ -1,97 +1,46 @@
-# .gitignore for intellij,java,maven,windows,osx
-
-### Intellij ###
-.idea
-.idea_modules/
-/out/
-
-### log ###
-logs/
-*.log
-
-*.iws
-*.iml
-*.ipr
-
-### Java ###
-*.class
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
-*.jar
-*.war
-*.ear
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-
-
-### Maven ###
+# maven ignore
 target/
-pom.xml.tag
-pom.xml.releaseBackup
-pom.xml.versionsBackup
-pom.xml.next
-release.properties
-dependency-reduced-pom.xml
-buildNumber.properties
-.mvn/timing.properties
+*.jar
+!.mvn/wrapper/*
+*.war
+*.zip
+*.tar
+*.tar.gz
+.flattened-pom.xml
 
+# eclipse ignore
+.settings/
+.project
+.classpath
 
-### Windows ###
-# Windows image file caches
-Thumbs.db
-ehthumbs.db
+# idea ignore
+.idea/
+*.ipr
+*.iml
+*.iws
 
-# Folder config file
-Desktop.ini
+# visual-studio-code ignore
+.vscode/
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+# temp ignore
+*.log
+*.cache
+*.diff
+*.patch
+*.tmp
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-
-### OSX ###
-*~
+# system ignore
 .DS_Store
-.AppleDouble
-.LSOverride
+Thumbs.db
+*.orig
 
-# Icon must end with two \r
-Icon
+# license check result
+license-list
 
+# grpc compiler
+compiler/gradle.properties
+compiler/build/*
+compiler/.gradle/*
 
-# Thumbnails
-._*
-
-# Files that might appear in the root of a volume
-.DocumentRevisions-V100
-.fseventsd
-.Spotlight-V100
-.TemporaryItems
-.Trashes
-.VolumeIcon.icns
-
-# Directories potentially created on remote AFP share
-.AppleDB
-.AppleDesktop
-Network Trash Folder
-Temporary Items
-.apdisk
-
-
-### Commitizen ###
-node_modules/
-package.json
-
-dubbo-registry.cache*
+# protobuf
+dubbo-serialization/dubbo-serialization-protobuf/build/*

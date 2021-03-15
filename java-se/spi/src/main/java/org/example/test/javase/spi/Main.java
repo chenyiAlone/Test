@@ -1,5 +1,8 @@
 package org.example.test.javase.spi;
 
+import java.util.ServiceLoader;
+import org.example.test.javase.spi.api.HelloService;
+
 /**
  * @author guitongZhang
  * @date 2021/03/14 18:50
@@ -7,7 +10,10 @@ package org.example.test.javase.spi;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println(123);
+        ServiceLoader<HelloService> services = ServiceLoader.load(HelloService.class);
+        for (HelloService service : services) {
+            service.sayHello();
+        }
     }
 
 }

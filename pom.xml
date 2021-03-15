@@ -12,7 +12,26 @@
         <module>java-se</module>
         <module>java-se/spi</module>
         <module>others</module>
+        <module>java-se/io</module>
     </modules>
+
+    <properties>
+        <junit_version>4.13.2</junit_version>
+    </properties>
+
+
+    <dependencies>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.18</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.13.2</version>
+        </dependency>
+    </dependencies>
 
 
 </project>

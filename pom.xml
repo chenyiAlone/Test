@@ -13,6 +13,7 @@
         <module>java-se/spi</module>
         <module>others</module>
         <module>java-se/io</module>
+        <module>utils</module>
     </modules>
 
     <properties>

@@ -2,6 +2,7 @@ package org.example.test.javase.spi;
 
 
 import lombok.extern.slf4j.Slf4j;
+import org.example.test.utils.TraceUtils;
 import org.junit.Test;
 
 /**
@@ -12,8 +13,8 @@ import org.junit.Test;
 public class MainTest {
 
     @Test
-    public void test() {
-        log.info("hello world");
+    public void testMain() {
+        TraceUtils.trace(Main.class);
     }
 
 }

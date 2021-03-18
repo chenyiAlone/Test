@@ -14,6 +14,8 @@
         <module>others</module>
         <module>java-se/io</module>
         <module>utils</module>
+        <module>spring</module>
+        <module>spring/spring-boot</module>
     </modules>
 
     <properties>
@@ -22,11 +24,6 @@
 
 
     <dependencies>
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-            <version>1.18.18</version>
-        </dependency>
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>

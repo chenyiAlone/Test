@@ -15,7 +15,10 @@
         <module>java-se/io</module>
         <module>utils</module>
         <module>spring</module>
-        <module>spring/spring-boot</module>
+        <module>java-se/class-loader</module>
+        <module>java-se/lang</module>
+        <module>java-se/reflection</module>
+        <module>demo</module>
     </modules>
 
     <properties>

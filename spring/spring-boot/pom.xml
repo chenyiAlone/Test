@@ -12,6 +12,7 @@
     <artifactId>spring-boot</artifactId>
     <modules>
         <module>config</module>
+        <module>configuration</module>
     </modules>
 
 
